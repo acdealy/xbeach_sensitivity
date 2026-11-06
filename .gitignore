@@ -1,0 +1,17 @@
+# Ignore everything...
+*
+# ...but look inside folders...
+!*/
+# ...and keep only these file types
+!*.py
+!*.ipynb
+!*.sh
+!.gitignore
+
+# never track these, even though they contain .py/.ipynb files or many folders
+.ipynb_checkpoints/
+__pycache__/
+**/xbeach_cases/
+**/logs/
+!*.patch
+!README.md

@@ -1,0 +1,13 @@
+Index: src/xbeachlibrary/initialize.F90
+===================================================================
+--- src/xbeachlibrary/initialize.F90	(revision 6170)
++++ src/xbeachlibrary/initialize.F90	(working copy)
+@@ -348,7 +348,7 @@
+          else
+             s%dtheta_s=2*par%px
+             s%ntheta_s=0
+-            allocate(s%theta_s(1:s%ntheta))
++            allocate(s%theta_s(1:s%ntheta_s))
+             allocate(s%thet_s(1:s%nx+1,1:s%ny+1,1:s%ntheta))
+             allocate(s%costh_s(1:s%nx+1,1:s%ny+1,1:s%ntheta))
+             allocate(s%sinth_s(1:s%nx+1,1:s%ny+1,1:s%ntheta))
